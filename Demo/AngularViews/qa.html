@@ -10,15 +10,22 @@
 <form class="form-login" role="form">
    
     <button class="btn btn-lg btn-info btn-block" type="submit" data-ng-click="getQuestions()">Load Questions</button>
-     <ul>
+    <!-- <ul>
     <li ng-repeat="question in questions">
       <span>{{question.text}} ?</span>
          <input type="text"  placeholder="Type answer" data-ng-model="answer.Text" autofocus>
         <button class="btn btn-lg btn-info btn-block" type="submit" ng-click="submitAnswer(question.id);">Submit Answer</button>
       
     </li>
-  </ul>
-     <div data-ng-hide="qmessage == ''" class="alert alert-danger">
+  </ul>-->
+     <ul>
+    <li ng-repeat="answerObject in answers">
+      <span>{{answerObject.QuestionText}} ?</span>
+         <input type="text"  placeholder="Type answer" data-ng-model="answerObject.Text" autofocus>
+        <button class="btn btn-lg btn-info btn-block" type="submit" ng-click="submitAnswer(answerObject);">Submit Answer</button>
+      
+    </li>
+  </ul>     <div data-ng-hide="qmessage == ''" class="alert alert-danger">
         {{qmessage}}
     </div>
 </form>
