@@ -7,17 +7,7 @@ using System.Web;
 
 namespace Demo.Models
 {
-    //[Table("Question")]
-    //public class Question
-    //{
-    //    public int QuestionId { get; set; }
-    //    public string QuestionText { get; set; }
-        
-    //    public virtual string AspNetUsersId { get; set; }
-    //    [ForeignKey("AspNetUsersId")]
-    //    public virtual AspNetUsers User { get; set; }
-
-    //}
+ 
     [Table("Question")]
     public partial class Question
     {

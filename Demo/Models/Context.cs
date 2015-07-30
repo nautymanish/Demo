@@ -8,18 +8,7 @@ using System.Web;
 
 namespace Demo.Models
 {
-    // public class Context: DbContext 
-    //{
-    //     public DbSet<Answer> Answers { get; set; }
-    //     public DbSet<Question> Questions { get; set; }
-    //     public DbSet<AspNetUsers> Users { get; set; }
-    //     public Context()
-    //         : base()
-    //     {
 
-    //     }
-         
-    //}
 
     public partial class Context : DbContext
     {
